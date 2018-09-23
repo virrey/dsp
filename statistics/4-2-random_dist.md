@@ -5,7 +5,8 @@ rand_one_k = np.random.random(1000)
 pmf_r1k = thinkstats2.Pmf(rand_one_k,label='random numbers')
 
 thinkplot.preplot(1)
-thinkplot.Hist(pmf_r1k, align='left', width=width)
+thinkplot.Hist(pmf_r1k,width=.003)
+#thinkplot.Pmf(pmf_r1k, linewidth=.1)
 thinkplot.Config(xlabel='random numbers', ylabel='PMF')
 ```
 It looks like the distribution of random numbers is uniform. This casts some doubt as to the 'randomness' of the random numbers as even random numbers don't result in a completely uniform distribution.
